@@ -1,0 +1,21 @@
+{ 
+  "name": "module-grapher",
+  "description": "Programatically finds and resolves dependencies.",
+  "main": "./lib/module-grapher",
+  "version": "0.1.0",
+  "dependencies": {
+    "async-it" : ">=0.2.0",
+    "uglify-js": ">=1.0.0"
+  },
+  "author": "Tobie Langel <tobie.langel@gmail.com> (http://tobielangel.com)",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/tobie/module-grapher.git"
+  },
+  "licenses": [
+    {
+      "type" : "MIT",
+      "url" : "http://github.com/tobie/module-grapher/raw/master/LICENSE"
+    }
+  ]
+}
