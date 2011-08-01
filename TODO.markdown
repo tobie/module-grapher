@@ -1,0 +1,5 @@
+- Better error handling.
+- Size of each module.
+- Size of module + its dependencies.
+- Support for AMD modules.
+- Allow different modules to co-exist (perhaps through renaming in them in define statements?).
