@@ -2,4 +2,4 @@
 - Size of each module.
 - Size of module + its dependencies.
 - Support for AMD modules.
-- Allow different modules to co-exist (perhaps through renaming in them in define statements?).
+- Allow different versions of a module to co-exist (perhaps through renaming them in define statements?).
