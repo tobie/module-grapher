@@ -1,4 +1,3 @@
-- cleanup path resolver.
 - Better error handling.
 - Size of each module.
 - Size of module + its dependencies.
