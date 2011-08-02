@@ -1,4 +1,3 @@
-- Better error handling.
 - Size of each module.
 - Size of module + its dependencies.
 - Support for AMD modules.
