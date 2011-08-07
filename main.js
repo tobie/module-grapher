@@ -2,30 +2,28 @@ var dependencyResolver = require('./lib/dependency-resolver'),
     identifier = require('./lib/identifier'),
     fs = require('fs');
 
-var _paths = [];
-Object.defineProperty(exports, 'paths', {
-  get: function() {
-    return _paths;
+exports.fromSrc = function(src, config, callback) {
+  if (!callback) {
+    callback = config;
+    config = {};
   }
-});
-
-exports.defaultDependencyResolver = dependencyResolver.create({
-  searchPaths: _paths,
-  allowDynamicModuleIdentifiers: true
-});
-
-exports.fromSrc = function(src, callback) {
-  exports.defaultDependencyResolver.fromSrc(src, null, {}, callback);
+  var resolver = dependencyResolver.create(config);
+  resolver.fromSrc(src, null, {}, callback);
 };
 
-exports.fromModuleIdentifier = function(ident, callback) {
+exports.fromModuleIdentifier = function(ident, config, callback) {
+  if (!callback) {
+    callback = config;
+    config = {};
+  }
   ident = identifier.create(ident);
-  var module = exports.defaultDependencyResolver.createModule(ident);
-  exports.defaultDependencyResolver.fromModule(module, {}, callback);
+  var resolver = dependencyResolver.create(config),
+      module = resolver.createModule(ident);
+  resolver.fromModule(module, {}, callback);
 };
 
-exports.fromPath = function(p, callback) {
+exports.fromPath = function(p, config, callback) {
   fs.readFile(p, 'utf8', function(err, src) {
-    err ? callback(err) : exports.fromSrc(src, callback);
+    err ? callback(err) : exports.fromSrc(src, config, callback);
   })
 };
