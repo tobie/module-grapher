@@ -1,5 +1,5 @@
-var dependencyResolver = require('./module-grapher/dependency-resolver'),
-    identifier = require('./module-grapher/identifier'),
+var dependencyResolver = require('./lib/dependency-resolver'),
+    identifier = require('./lib/identifier'),
     fs = require('fs');
 
 var _paths = [];

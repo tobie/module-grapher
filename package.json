@@ -1,7 +1,7 @@
 { 
   "name": "module-grapher",
   "description": "Programatically finds and resolves dependencies.",
-  "main": "./lib/module-grapher",
+  "main": "./main",
   "version": "0.1.0",
   "dependencies": {
     "async-it" : ">=0.2.0",
