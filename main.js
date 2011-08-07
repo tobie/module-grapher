@@ -26,10 +26,6 @@ exports.fromModuleIdentifier = function(ident, callback) {
 
 exports.fromPath = function(p, callback) {
   fs.readFile(p, 'utf8', function(err, src) {
-    if (err) {
-      callback(err);
-    } else {
-      exports.fromSrc(src, callback);
-    }
+    err ? callback(err) : exports.fromSrc(src, callback);
   })
 };
