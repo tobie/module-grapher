@@ -8,7 +8,7 @@ exports.fromSrc = function(src, config, callback) {
     config = {};
   }
   var resolver = dependencyResolver.create(config);
-  resolver.fromSrc(src, null, {}, callback);
+  resolver.fromSrc(src, null, callback);
 };
 
 exports.fromModuleIdentifier = function(ident, config, callback) {
