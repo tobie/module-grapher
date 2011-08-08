@@ -1,6 +1,5 @@
 - Coffee script support.
 - Allow specifying missing modules.
-- Move some of the stuff that's in Dep Resolver to main.
 - Size of module + its dependencies.
 - Support for AMD modules.
 - Allow different versions of a module to co-exist (perhaps through renaming them in define statements?).
