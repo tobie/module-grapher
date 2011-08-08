@@ -4,6 +4,5 @@
 - Size of each module.
 - Size of module + its dependencies.
 - Support for AMD modules.
-- Clean-up parser.
 - Allow different versions of a module to co-exist (perhaps through renaming them in define statements?).
 - Add tests.
