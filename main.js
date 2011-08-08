@@ -19,7 +19,7 @@ exports.fromModuleIdentifier = function(ident, config, callback) {
   ident = identifier.create(ident);
   var resolver = dependencyResolver.create(config),
       module = resolver.createModule(ident);
-  resolver.fromModule(module, {}, callback);
+  resolver.fromModule(module, callback);
 };
 
 exports.fromPath = function(p, config, callback) {
