@@ -1,6 +1,5 @@
 - Coffee script support.
 - Allow specifying missing modules.
-- Size of module + its dependencies.
 - Support for AMD modules.
 - Allow different versions of a module to co-exist (perhaps through renaming them in define statements?).
 - Add tests.
