@@ -1,4 +1,3 @@
-- Coffee script support.
 - Allow specifying missing modules.
 - Support for AMD modules.
 - Allow different versions of a module to co-exist (perhaps through renaming them in define statements?).

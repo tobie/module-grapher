@@ -2,10 +2,11 @@
   "name": "module-grapher",
   "description": "Programatically finds and resolves dependencies.",
   "main": "./main",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "dependencies": {
     "async-it" : ">=0.2.0",
-    "uglify-js": ">=1.0.0"
+    "uglify-js": ">=1.0.0",
+    "coffee-script": ">=0.7.0"
   },
   "author": "Tobie Langel <tobie.langel@gmail.com> (http://tobielangel.com)",
   "repository": {
