@@ -41,11 +41,11 @@ License
 
 Your choice of [MIT or Apache, Version 2.0 licenses][7]. `module-grapher` Copyright 2010 [Tobie Langel][8].
 
-[1] http://wiki.commonjs.org/wiki/Modules/1.1
-[2] http://nodejs.org
-[3] http://npmjs.org
-[4] http://www.sitepen.com/blog/author/kzyp/
-[5] http://github.com/kriszyp/cpm
-[6] http://jashkenas.github.com/coffee-script
-[7] https://raw.github.com/tobie/module-grapher/master/LICENSE
-[8] http://tobielangel.com
+[1]: http://wiki.commonjs.org/wiki/Modules/1.1
+[2]: http://nodejs.org
+[3]: http://npmjs.org
+[4]: http://www.sitepen.com/blog/author/kzyp/
+[5]: http://github.com/kriszyp/cpm
+[6]: http://jashkenas.github.com/coffee-script
+[7]: https://raw.github.com/tobie/module-grapher/master/LICENSE
+[8]: http://tobielangel.com
