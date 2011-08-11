@@ -25,11 +25,13 @@ Usage
 
 To get dependencies from a module:
 
-    require('module-grapher').graph('foo', {
-      paths: ['./lib', './vendor'],  // defaults to the equivalent of ['.']
-      root: 'path/to/package/root/' // defaults to process.cwd()
-    });
-    
+```javascript
+require('module-grapher').graph('foo', {
+  paths: ['./lib', './vendor'], // defaults to the equivalent of ['.']
+  root: 'path/to/package/root/' // defaults to process.cwd()
+});
+```
+
 Other options include:
 
 * `extensions` (defaults to `['.js', '.coffee']`): an array of supported extensions.
@@ -40,7 +42,7 @@ Other options include:
 License
 -------
 
-Your choice of [MIT or Apache, Version 2.0 licenses][7]. `module-grapher` Copyright 2010 [Tobie Langel][8].
+Your choice of [MIT or Apache, Version 2.0 licenses][7]. `module-grapher` is copyright 2010 [Tobie Langel][8].
 
 [1]: http://wiki.commonjs.org/wiki/Modules/1.1
 [2]: http://nodejs.org
