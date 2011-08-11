@@ -33,9 +33,9 @@ To get dependencies from a module:
 Other options include:
 
 * `extensions` (defaults to `['.js', '.coffee']`): an array of supported extensions.
-* `allowDirModules`: Also search for modules in the index file of the directory named after them. So look for module `foo/bar` not only in `foo/bar.js` but also in `foo/bar/index.js`. Defaults  to `false`.
-* `allowMissingModules`: don't throw when a module is missing. Just mark it as such. Defaults  to `false`.
-* `allowDynamicModuleIdentifiers`: don't throw when the identifier of module isn't a string.Defaults  to `false`.
+* `allowDirModules`: Also search for modules in the index file of the directory named after them. So look for module `foo/bar` not only in `foo/bar.js` but also in `foo/bar/index.js`. Defaults to `false`.
+* `allowMissingModules`: don't throw when a module is missing. Just mark it as such. Defaults to `false`.
+* `allowDynamicModuleIdentifiers`: don't throw when the identifier of module isn't a string. Defaults to `false`.
 
 License
 -------
