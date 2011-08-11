@@ -29,11 +29,11 @@
   "licenses": [
     {
       "type" : "MIT",
-      "url" : "http://github.com/tobie/module-grapher/raw/master/LICENSE",
+      "url" : "http://github.com/tobie/module-grapher/raw/master/LICENSE"
     },
     {
       "type" : "Apache-2.0",
-      "url" : "http://github.com/tobie/module-grapher/raw/master/LICENSE",
+      "url" : "http://github.com/tobie/module-grapher/raw/master/LICENSE"
     }
   ]
 }
