@@ -30,7 +30,8 @@ To get dependencies from a module:
       root: 'path/to/package/root/' // defaults to process.cwd()
     });
     
-Other options:
+Other options include:
+
 * `extensions` (defaults to `['.js', '.coffee']`): an array of supported extensions.
 * `allowDirModules`: Also search for modules in the index file of the directory named after them. So look for module `foo/bar` not only in `foo/bar.js` but also in `foo/bar/index.js`. Defaults  to `false`.
 * `allowMissingModules`: don't throw when a module is missing. Just mark it as such. Defaults  to `false`.
