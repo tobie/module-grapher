@@ -1,14 +1,27 @@
 { 
   "name": "module-grapher",
-  "description": "Programatically finds and resolves dependencies.",
+  "description": "Programatically finds and resolves CommonJS module dependencies.",
   "main": "./main",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "dependencies": {
     "async-it" : ">=0.2.0",
     "uglify-js": ">=1.0.0",
     "coffee-script": ">=0.7.0"
   },
-  "author": "Tobie Langel <tobie.langel@gmail.com> (http://tobielangel.com)",
+  "maintainers": [
+    {
+      "name": "Tobie Langel",
+      "email": "tobie.langel@gmail.com",
+      "web": "http://tobielangel.com"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "Tobie Langel",
+      "email": "tobie.langel@gmail.com",
+      "web": "http://tobielangel.com"
+    }
+  ],
   "repository": {
     "type": "git",
     "url": "http://github.com/tobie/module-grapher.git"
@@ -16,7 +29,11 @@
   "licenses": [
     {
       "type" : "MIT",
-      "url" : "http://github.com/tobie/module-grapher/raw/master/LICENSE"
+      "url" : "http://github.com/tobie/module-grapher/raw/master/LICENSE",
+    },
+    {
+      "type" : "Apache-2.0",
+      "url" : "http://github.com/tobie/module-grapher/raw/master/LICENSE",
     }
   ]
 }
