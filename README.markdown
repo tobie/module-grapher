@@ -29,7 +29,7 @@ To get dependencies from a module:
 require('module-grapher').graph('foo', {
   paths: ['./lib', './vendor'], // defaults to the equivalent of ['.']
   root: 'path/to/package/root/' // defaults to process.cwd()
-});
+}, callback);
 ```
 
 Other options include:
