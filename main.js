@@ -19,8 +19,6 @@ function graph(ident, config, callback) {
     callback = config;
     config = {};
   }
-  ident = identifier.create(ident);
-  ident.resolve();
   var resolver = dependencyResolver.create(config),
       module = resolver.createModule(ident),
       result = resolver.createResult(config);
