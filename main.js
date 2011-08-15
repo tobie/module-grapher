@@ -22,7 +22,7 @@ function graph(ident, config, callback) {
   var resolver = dependencyResolver.create(config),
       module = resolver.createModule(ident),
       result = resolver.createResult(config);
-  
+
   resolver.fromModule(module, result, callback);
 };
 
@@ -32,5 +32,4 @@ function graphPath(p, config, callback) {
     err ? callback(err) : graphSrc(src, config, callback);
   })
 };
-
 
