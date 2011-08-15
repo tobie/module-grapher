@@ -8,9 +8,8 @@ function graphSrc(src, config, callback) {
     callback = config;
     config = {};
   }
-  var resolver = dependencyResolver.create(config),
-      result = resolver.createResult(config);
-  resolver.fromSrc(src, result, callback);
+  var resolver = dependencyResolver.create(config);
+  resolver.fromSrc(src, callback);
 };
 
 exports.graph = graph;
@@ -20,10 +19,9 @@ function graph(ident, config, callback) {
     config = {};
   }
   var resolver = dependencyResolver.create(config),
-      module = resolver.createModule(ident),
-      result = resolver.createResult(config);
+      module = resolver.createModule(ident);
 
-  resolver.fromModule(module, result, callback);
+  resolver.fromModule(module, callback);
 };
 
 exports.graphPath = graphPath;
