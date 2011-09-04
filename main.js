@@ -28,6 +28,6 @@ exports.graphPath = graphPath;
 function graphPath(p, config, callback) {
   fs.readFile(p, 'utf8', function(err, src) {
     err ? callback(err) : graphSrc(src, config, callback);
-  })
+  });
 };
 
