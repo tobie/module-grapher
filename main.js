@@ -1,6 +1,16 @@
-var dependencyResolver = require('./lib/dependency-resolver'),
-    identifier = require('./lib/identifier'),
+var identifier = require('./lib/identifier'),
     fs = require('fs');
+
+exports.createDependencyResolver = createDependencyResolver;
+function createDependencyResolver(config) {
+  var dependencyResolver;
+  if (config.isPackageAware) {
+    dependencyResolver = require('./lib/package-aware/dependency-resolver');
+  } else {
+    dependencyResolver = require('./lib/dependency-resolver');
+  }
+  return dependencyResolver.create(config);
+}
 
 exports.graphSrc = graphSrc;
 function graphSrc(src, config, callback) {
@@ -8,7 +18,7 @@ function graphSrc(src, config, callback) {
     callback = config;
     config = {};
   }
-  var resolver = dependencyResolver.create(config);
+  var resolver = createDependencyResolver(config);
   resolver.fromSrc(src, callback);
 };
 
@@ -18,7 +28,7 @@ function graph(ident, config, callback) {
     callback = config;
     config = {};
   }
-  var resolver = dependencyResolver.create(config),
+  var resolver = createDependencyResolver(config),
       module = resolver.createModule(ident);
 
   resolver.fromModule(module, callback);
