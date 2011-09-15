@@ -2,7 +2,7 @@
   "name": "module-grapher",
   "description": "Programatically finds and resolves CommonJS module dependencies.",
   "main": "./main",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "dependencies": {
     "async-it" : ">=0.2.0",
     "uglify-js": ">=1.0.0",
