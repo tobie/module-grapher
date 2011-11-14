@@ -2,18 +2,34 @@
   "name": "module-grapher",
   "description": "Programatically finds and resolves CommonJS module dependencies.",
   "main": "./main",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "dependencies": {
     "async-it": ">=0.2.0",
     "uglify-js": ">=1.0.0",
     "coffee-script": ">=0.7.0"
   },
-  "author": "Tobie Langel <tobie.langel@gmail.com> (http://tobielangel.com)",
+  "author": {
+    "name": "Tobie Langel",
+    "email": "tobie.langel@gmail.com",
+    "web": "http://tobielangel.com"
+  },
   "maintainers": [
-    "Tobie Langel <tobie.langel@gmail.com> (http://tobielangel.com)"
+    {
+      "name": "Tobie Langel",
+      "email": "tobie.langel@gmail.com",
+      "web": "http://tobielangel.com"
+    }
   ],
   "contributors": [
-    "Tobie Langel <tobie.langel@gmail.com> (http://tobielangel.com)"
+    {
+      "name": "Tobie Langel",
+      "email": "tobie.langel@gmail.com",
+      "web": "http://tobielangel.com"
+    },
+    {
+      "name": "Chris Tice",
+      "email": "chris.tice@gmail.com"
+    }
   ],
   "repository": {
     "type": "git",
