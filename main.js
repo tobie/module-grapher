@@ -20,7 +20,7 @@ function graphSrc(src, config, callback) {
   }
   var resolver = createDependencyResolver(config);
   resolver.fromSrc(src, callback);
-};
+}
 
 exports.graph = graph;
 function graph(ident, config, callback) {
@@ -32,12 +32,11 @@ function graph(ident, config, callback) {
       module = resolver.createModule(ident);
 
   resolver.fromModule(module, callback);
-};
+}
 
 exports.graphPath = graphPath;
 function graphPath(p, config, callback) {
   fs.readFile(p, 'utf8', function(err, src) {
     err ? callback(err) : graphSrc(src, config, callback);
   });
-};
-
+}
