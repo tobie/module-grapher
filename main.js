@@ -31,20 +31,12 @@ function graph(ident, config, callback) {
   var resolver = createDependencyResolver(config),
       module = resolver.createModule(ident);
 
-  resolver.fromModule(module, function() {
-    if (callback) {
-      callback.apply(this, arguments);
-    }
-  });
+  resolver.fromModule(module, callback);
 }
 
 exports.graphPath = graphPath;
 function graphPath(p, config, callback) {
   fs.readFile(p, 'utf8', function(err, src) {
-    if (err) {
-      callback(err);
-    } else {
-      graphSrc(src, config, callback);
-    }
+    err ? callback(err) : graphSrc(src, config, callback);
   });
 }
