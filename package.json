@@ -5,7 +5,7 @@
   "version": "0.10.4",
   "dependencies": {
     "async-it": ">=0.2.0",
-    "uglify-js": ">=1.0.0",
+    "uglify-js": "1.x",
     "coffee-script": ">=0.7.0"
   },
   "author": "Tobie Langel <tobie.langel@gmail.com> (http://tobielangel.com)",
